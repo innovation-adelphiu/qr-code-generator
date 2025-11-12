@@ -6,7 +6,8 @@
     <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/gh/innovation-adelphiu/info-button@main/info-button.js"></script>
+
     <style>
     body 
     {      
@@ -68,7 +69,7 @@
         padding: 4px;
     }
 
-    button 
+    .custom-button 
     { 
         background: #5f7a99;
         color: #FFFFFF;
@@ -89,7 +90,7 @@
         margin: 20px 15px 0px 15px;
     }
 
-    button:hover
+    .custom-button:hover
     {
         filter: brightness(1.2);         /* slightly brighter */
         transform: translateY(2px);       /* moves downward a bit */
@@ -245,8 +246,8 @@
             <textarea id="lowerTextArea" placeholder="Enter your text here"></textarea><br>
         </div>
 
-        <button id="imageSaveButton">Save as Image</button>
-        <button id="pdfSaveButton">Save as PDF</button>
+        <button id="imageSaveButton" class="custom-button">Save as Image</button>
+        <button id="pdfSaveButton" class="custom-button">Save as PDF</button>
 
     </div>
     <div id="rightColumn" class="column">
